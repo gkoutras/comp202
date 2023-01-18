@@ -26,22 +26,22 @@ The results are presented through the classes `PerformanceTest` and `ManualPerfo
 
 *This table was implemented for N = 104 keys with a range of values from 1 to 106 and not as requested in the exercise due to a stack overflow error that occurred for larger orders from the excessive number of recursive function calls. The results below were obtained for the same range of values from 1 to 106 for different total key numbers N.*
 
-![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/results/Picture1.png?raw=true)
+![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/pngs/Picture1.png?raw=true)
 
 ### Insert
 The results of the comparisons of the two methods had the same mean values, which is also justified in the code, as the implementation increases the counter at almost the same points, so the result was expected. It should be noted however, that although the average number of both cases is the same, the number of comparisons per se has some differences, which can be seen as the number of keys increases with threaded BST performing more comparisons than BST.
 
-![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/results/Picture2.png?raw=true)
+![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/pngs/Picture2.png?raw=true)
 
 ### Random Search
 The results of the comparisons of the two tree methods had similar mean values. What should be noted however is that, on a logarithmic scale (increasing the number of entered keys), the increase in comparisons for the sorted field appears almost decimally "linear", while for trees it is "exponential".
 
-![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/results/Picture3.png?raw=true)
+![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/pngs/Picture3.png?raw=true)
 
 ### Range Search (K = 100)
 The results of the comparisons of the tree and the sorted field had large differences in their values which were also proportional to the number N of total keys. What should be noted again, is that, on a logarithmic scale, the increase in comparisons for the sorted field again seems almost decimally "linear", while for the tree it seems to stagnate.
 
-![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/results/Picture4.png?raw=true)
+![alt text](https://github.com/gkoutras/comp202/blob/master/comp202_ex2/pngs/Picture4.png?raw=true)
 
 ### Range Search (K = 1000)
 The results of the comparisons of the tree and the sorted field had large differences in their values which were also proportional to the number N of total keys. What should be noted once more is that, on a logarithmic scale, the increase in comparisons for the sorted field again seems almost decimally "linear", while for the tree it seems to stagnate, while it also seems that there is an increase with respect to the previous case.
